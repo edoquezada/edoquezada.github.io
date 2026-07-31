@@ -402,6 +402,110 @@ footer{
     color: #fff;
 }
 
+/*FORM  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+#open-contacto{
+    cursor: pointer;
+}
+
+.contacto-overlay{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+.contacto-overlay.show-contacto{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contacto-modal{
+    position: relative;
+    background-color: var(--background-color);
+    border: 1px solid var(--blue-color);
+    border-radius: 12px;
+    padding: 2em;
+    width: 90%;
+    max-width: 420px;
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.contacto-modal h3{
+    color: var(--blue-color);
+}
+
+.contacto-overlay.show-contacto .contacto-modal{
+    transform: scale(1);
+}
+
+.close-contacto{
+    position: absolute;
+    top: 0.8em;
+    right: 0.8em;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 0;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 1.4em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.close-contacto:hover{
+    background-color: var(--bgtag-color);
+    color: var(--blue-color);
+}
+
+.form-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    margin-top: 1em;
+}
+
+.form-contacto label{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    color: var(--text-color);
+    font-size: 0.9em;
+}
+
+.tform{
+    color: var(--text-color);
+    font-size: 0.6em;
+}
+
+.frequired{
+    color: var(--blue-color);
+    font-size: 0.8em;
+}
+
+.form-contacto input, textarea{
+    padding: 0.7em;
+    border-radius: 8px;
+    border: 1px solid var(--blue-color);
+    background-color: var(--bgtag-color);
+    color: var(--text-color);
+    font-family: inherit;
+}
+
+#form-status{
+    font-size: 0.85em;
+    color: var(--blue-color);
+}
+
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 @media screen and (max-width: 570px){

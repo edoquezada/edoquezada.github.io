@@ -35,7 +35,15 @@ const traducciones = {
         stitle: "HABILIDADES",
         sadvance: "Avanzado",
         ssolid: "Sólido",
-        sinprogres: "En curso"
+        sinprogres: "En curso",
+        //contact
+        ctitle: "CONTACTO",
+        clabel1: "Nombre*",
+        clabel2: "Email*",
+        clabel3: "Mensaje",
+        frequired: "*Obligatorio",
+        cbtn: "Enviar",
+        formtext: "Tus datos solo se usarán para gestionar una posible relación laboral. No se almacenarán en ninguna base de datos ni se utilizarán con fines de SPAM.",
     },
     en: {
         //intro
@@ -73,7 +81,15 @@ const traducciones = {
         stitle: "SKILLS",
         sadvance: "Advanced",
         ssolid: "Strong",
-        sinprogres: "In Progress"
+        sinprogres: "In Progress",
+        //contact
+        ctitle: "CONTACT",
+        clabel1: "Name*",
+        clabel2: "Email*",
+        clabel3: "Message",
+        frequired: "*Required",
+        cbtn: "Submit",
+        formtext: "Your data will only be used to manage a potential employment relationship. It will not be stored in any database or used for SPAM purposes.",
     }
 };
 

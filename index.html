@@ -42,7 +42,7 @@ href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
                     <li><a data-i18n="nav1" href="#proyectos">Proyectos</a></li>
                     <li><a data-i18n="nav2" href="#skills">Habilidades</a></li>
                     <li><a data-i18n="nav3" href="#sobre-mi">Sobre mí</a></li>
-                    <li><a data-i18n="nav4" href="#">Contacto</a></li>
+                    <li><a data-i18n="nav4" id="open-contacto">Contacto</a></li>
                 </ul>
             </nav>
             <button class="CO"><i class="bi bi-moon-stars-fill"></i></button>
@@ -172,6 +172,38 @@ href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
                 </div>                
             </div>
         </section>
+<!--formulario de contacto-->
+        <div class="contacto-overlay" id="contacto-overlay">
+            <div class="contacto-modal">
+                <button class="close-contacto" id="close-contacto"><i class="bi bi-x"></i></button>
+                <h3 data-i18n="ctitle">CONTACTO</h3>
+                <form class="form-contacto" id="form-contacto">
+                    <input type="hidden" name="access_key" value="68b2716d-6c47-4e73-a8fe-bef80ca9757a">
+                    
+                    <label>
+                        <span data-i18n="clabel1">Nombre*</span>
+                        <input type="text" name="name" required>
+                    </label>
+                    
+                    <label>
+                        <span data-i18n="clabel2">Email*</span>
+                        <input type="email" name="email" required>
+                    </label>
+
+                    <label>
+                        <span data-i18n="clabel3">Mensaje</span>
+                        <textarea name="message"></textarea>
+                    </label>
+
+                     <p class="frequired" data-i18n="frequired">*Obligatorio</p>
+                    
+                    <button type="submit" data-i18n="cbtn" class="btn prr">Enviar</button>
+
+                    <p data-i18n="formtext" class="tform">Tus datos solo se usarán para gestionar una posible relación laboral. No se almacenarán en ninguna base de datos ni se utilizarán con fines de SPAM.</p>
+                    <p id="form-status"></p>
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer-cont">
@@ -202,5 +234,6 @@ href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
         });
     });
 </script>
+<script src="contact.js"></script>
 </body>
 </html>
