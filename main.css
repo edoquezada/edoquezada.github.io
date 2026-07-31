@@ -70,6 +70,9 @@ main{
 .logo{
     max-width: 2em;
     color: var(--text-color);
+    width: 2em;
+    height: auto;
+    flex-shrink: 0;
 }
 
 .CO{
