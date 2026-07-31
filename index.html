@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+        if(localStorage.getItem("tema") === "dark"){
+            document.documentElement.setAttribute("data-theme", "dark");
+        }
+    </script>
+    <link rel="stylesheet" href="main.css">    
+    <title>CV Eduardo Quezada</title>
+</head>
+<body>
+    <header>
+        <div class="header-cont">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve" class="logo">
+            <style type="text/css">
+                .st0{fill:currentColor;}
+            </style>
+            <path class="st0" d="M188.8,88.6c-0.5-11.5-3.2-22.6-7.9-32.9c-2.6-5.7-5.8-11.1-9.6-16.2c-2.4-3.2-5.1-6.3-8-9.3
+                c-0.2-0.2-0.3-0.3-0.5-0.5c-16.8-16.8-39.1-26-62.9-26s-46.1,9.2-62.9,26c-16.8,16.8-26,39.1-26,62.9c0,1.3,0,2.6,0.1,4
+                c0.1,2.7,0.4,5.3,0.7,8c2.6,19.2,11.3,37,25.3,50.9c16.8,16.8,39.1,26,62.9,26s46.1-9.2,62.9-26c0.2-0.2,0.3-0.3,0.5-0.5v41.4h25.5
+                V96.5v-4C188.9,91.2,188.9,89.9,188.8,88.6z M180.9,188.4h-9.6v-42.7v-14.9v-26.3h-1h-7h-1.1c-5.6,29.3-31.4,51.4-62.2,51.4
+                s-56.6-22.2-62.2-51.4c-0.5-2.6-0.8-5.3-1-8v0h126.5v0h0.1h7.9h0.1v0v-4c0-1.4,0-2.7-0.1-4c-0.6-10.3-3.3-20-7.9-28.7
+                c-11.9-22.9-35.8-38.6-63.4-38.6c-39.3,0-71.3,32-71.3,71.3c0,1.3,0,2.6,0.1,4c0.1,2.7,0.4,5.4,0.9,8c5.7,33.7,35.1,59.4,70.3,59.4
+                c27.5,0,51.5-15.7,63.4-38.6v17.6c-14.8,18.7-37.7,30.6-63.4,30.6c-40.6,0-74.3-30-80.1-69c-0.4-2.6-0.6-5.3-0.8-8
+                c-0.1-1.3-0.1-2.6-0.1-4c0-44.6,36.3-80.9,80.9-80.9c25.6,0,48.5,12,63.4,30.6c3,3.8,5.7,7.8,8,12.1c5.5,10.3,8.9,21.9,9.5,34.2
+                c0.1,1.3,0.1,2.7,0.1,4v4v33V188.4z M36.8,88.6c2.1-33.1,29.7-59.3,63.2-59.3s61.1,26.3,63.2,59.3H36.8z"/>
+            </svg>
+            <button class="open-menu" id="open-menu"><i class="bi bi-list"></i></button>
+            <nav class="nav" id="nav">
+                <button class="close-menu" id="close-menu"><i class="bi bi-x"></i></button>
+                <ul class="nav-list">
+                    <li><a data-i18n="nav1" href="#proyectos">Proyectos</a></li>
+                    <li><a data-i18n="nav2" href="#skills">Habilidades</a></li>
+                    <li><a data-i18n="nav3" href="#sobre-mi">Sobre mí</a></li>
+                    <li><a data-i18n="nav4" href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="CO"><i class="bi bi-moon-stars-fill"></i></button>
+        </div>
+        <script src="menu.js"></script>
+        <script src="toogleDarkmode.js"></script>
+    </header>
+    <main>
+        <section class="intro">
+            <p data-i18n="itag" class="tag">Disponible para trabajar</p>
+            <h1>
+                <span data-i18n="ititle">Eduardo Quezada</span><br>
+                <span class="titleazul" data-i18n="ititle2">Frontend & Sistemas Web</span>
+            </h1>
+            <p data-i18n="ipresent" class="present">Diseñador y maquetador con 7+ años construyendo infraestructura digital real. <br>+150 webs y sistemas que resuelven problemas de negocio.</p>
+            <div class="btns">
+                <a data-i18n="ibtn1" class="btn prr" href="#proyectos">Ver proyectos</a>
+                <a data-i18n="ibtn2" class="btn" href="cv/EQ_CV.pdf" download>Descargar CV</a>
+            </div>            
+        </section>
+        <section class="impacto">
+            <h3 data-i18n="imtitle" class="fade-in" id="impacto">IMPACTO REAL</h3>
+            <div class="card-cont">
+                <div class="card  fade-in">
+                    <h4>+150</h4>
+                    <p data-i18n="im1">Webs desarrolladas</p>
+                </div>
+                <div class="card  fade-in">
+                    <h4>x3</h4>
+                    <p data-i18n="im2">Clientes conseguidos con automatización</p>
+                </div>
+                <div class="card  fade-in">
+                    <h4>7</h4>
+                    <p data-i18n="im3">Años de experiencia real</p>
+                </div>
+            </div>
+        </section>
+        <section class="sobre-mi" id="sobre-mi">
+            <h3 data-i18n="smtitle" class="fade-in">SOBRE MÍ</h3>
+            <div class="sm-cont">
+                <img class="sm-foto fade-in" src="img/edo.png" alt="Eduardo Quezada">
+                <div class="smtexto">
+                    <p data-i18n="smdesc1" class="fade-in">
+                        Soy desarrollador web con más de siete años de experiencia 
+                        creando soluciones digitales que combinan diseño, funcionalidad y automatización. 
+                        A lo largo de mi trayectoria he desarrollado y mantenido más de 150 sitios web, 
+                        participado en la creación de herramientas internas y optimizado procesos mediante 
+                        tecnologías web y plataformas de automatización.
+                    </p>
+                    <p data-i18n="smdesc2"  class="fade-in">
+                        Actualmente estoy ampliando mis conocimientos en React y desarrollo Full Stack 
+                        con el objetivo de seguir evolucionando profesionalmente y afrontar proyectos 
+                        cada vez más ambiciosos. Me motiva el aprendizaje continuo, escribir código limpio 
+                        y desarrollar aplicaciones que ofrezcan una excelente experiencia tanto para el 
+                        usuario como para los equipos que las mantienen y evolucionan.
+                    </p>
+                    <div class="sm-valores">
+                        <span class="tag fade-in" data-i18n="smval1">Autonomía</span>
+                        <span class="tag fade-in" data-i18n="smval2">Resultados medibles</span>
+                        <span class="tag fade-in" data-i18n="smval3">Comunicación directa</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="destacado" id="proyectos">
+            <h3 data-i18n="dtitle" class="fade-in">PROYECTOS DESTACADOS</h3>
+            <div class="d-card-cont">
+                <div class="d-card  fade-in">
+                    <h4 data-i18n="dtitle2">Red de agencias Linea Tours</h4>
+                    <p data-i18n="ddesc1" class="d-card-t">+150 webs personalizadas para agencias de viaje franquiciadas. Sistema de automatización que triplicó la captación de clientes.</p>
+                    <p class="tag">WordPress</p>
+                    <p class="tag">Elementor</p>
+                    <p class="tag">Zapier</p>
+                    <p class="tag">GoHighLevel</p>
+                </div>
+                <div class="d-card  fade-in">
+                    <h4 data-i18n="dtitle3">Intranet de proveedores</h4>
+                    <p data-i18n="ddesc2" class="d-card-t">Sistema de publicación dinámica por categoría y país. Usuarios no técnicos publican contenido de forma autónoma.</p>
+                    <p class="tag">WordPress</p>
+                    <p class="tag">Custom Post Types</p>
+                    <p data-i18n="dtag" class="tag">Taxonomías</p>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <h3 data-i18n="stitle" class="fade-in">HABILIDADES</h3>
+            <div class="s-card-cont">
+                <div class="s-card fade-in">
+                    <p class="skill-n">WordPress</p>
+                    <p data-i18n="sadvance" class="skill-l">Avanzado</p>
+                </div>
+                <div class="s-card fade-in">
+                    <p class="skill-n">Elementor</p>
+                    <p data-i18n="sadvance" class="skill-l">Avanzado</p>
+                </div>
+                <div class="s-card fade-in">
+                    <p class="skill-n">HTML/CSS</p>
+                    <p data-i18n="ssolid" class="skill-l">Sólido</p>
+                </div>
+                <div class="s-card fade-in">
+                    <p class="skill-n">JavaScript</p>
+                    <p data-i18n="sinprogres" class="skill-l">En curso</p>
+                </div>
+                <div class="s-card fade-in">
+                    <p class="skill-n">Zapier</p>
+                    <p data-i18n="ssolid" class="skill-l">Sólido</p>
+                </div>
+                <div class="s-card fade-in">
+                    <p class="skill-n">GoHighLevel</p>
+                    <p data-i18n="sadvance" class="skill-l">Avanzado</p>
+                </div>
+                <div class="s-card fade-in">
+                    <p class="skill-n">Adobe Suite</p>
+                    <p data-i18n="sadvance" class="skill-l">Avanzado</p>
+                </div>
+                <div class="s-card fade-in">
+                    <p class="skill-n">Branding</p>
+                    <p data-i18n="ssolid" class="skill-l">Sólido</p>
+                </div>
+                <div class="s-card fade-in">
+                    <p class="skill-n">DNS/SMTP</p>
+                    <p data-i18n="sadvance" class="skill-l">Avanzado</p>
+                </div>
+                <div class="s-card fade-in">
+                    <p class="skill-n">React</p>
+                    <p data-i18n="sinprogres" class="skill-l">En curso</p>
+                </div>                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-cont">
+            <div><p>Eduardo A. Quezada Arévalo · Madrid</p></div>
+            <div><p><a href="#">LinkedIn</a> · <a href="#">edudesign56@gmail.com</a></p></div>
+        </div>
+        <button class="lang-toggle" id="lang-toggle"><span class="fi fi-es"></span> / <span class="fi fi-gb"></span></button>
+        <script>
+            document.querySelector("#lang-toggle").addEventListener("click", () => {
+                const actual = document.documentElement.getAttribute("lang") || "es";
+                const nuevo = actual === "es" ? "en" : "es";
+                aplicarIdioma(nuevo);
+            });
+        </script>
+        <script src="translate.js"></script>
+    </footer>
+<script src="animations.js"></script>
+<script>
+    document.querySelectorAll('.nav-list a[href^="#"], .btn[href^="#"]').forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const destino = document.querySelector(link.getAttribute("href"));
+            if(destino){
+                destino.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
+            nav.classList.remove("show-menu");
+            overlay.classList.remove("show-menu");
+        });
+    });
+</script>
+</body>
+</html>
