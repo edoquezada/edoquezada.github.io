@@ -379,6 +379,7 @@ footer{
     justify-content: space-between;
     font-size: 0.8em;
     color: var(--blue-color);
+    padding: 1.5em;
 }
 
 .lang-toggle{
